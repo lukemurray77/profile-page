@@ -1,0 +1,222 @@
+@media (min-width: 992px) {
+
+  /* FRONT END IMAGES */
+  .css-image {
+    width: 60% !important;
+  }
+  .html-image {
+    width: 60% !important;
+  }
+
+  /* BACK END IMAGES */
+  .redux-image {
+    width: 80% !important;
+  }
+  .postgresql-image {
+    width: 80% !important;
+  }
+  .nodejs-image {
+    width: 100% !important;
+  }
+  .dynamodb-image {
+    width: 80% !important;
+  }
+  .apiGateway-image {
+    width: 80% !important;
+  }
+  .serverless-image {
+    width: 100% !important;
+  }
+  .lambda-image {
+    width: 80% !important;
+  }
+  .restapi-image {
+    width: 80% !important;
+  }
+  .redshift-image {
+    width: 100% !important;
+  }
+  /*  BACK END SKILLS */
+  .s3-image {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-pills .nav-item .nav-link {
+    min-width: 80px;
+    font-size: 9px;
+  }
+  /*  FRONT END SKILLS */
+  .css-image {
+    width: 15% !important;
+    margin-right: 12%;
+  }
+  .html-image {
+    width: 15% !important;
+    margin-left: 12%;
+  }
+  .react-image {
+    width: 20% !important;
+    margin-right: 10%;
+  }
+  .bootstrap-image {
+    width: 20% !important;
+    margin-right: 10%;
+  }
+  .sass-image {
+    width: 20% !important;
+    margin-left: 10%;
+  }
+  .js-image {
+    width: 20% !important;
+  }
+
+  /*  BACK END SKILLS */
+
+  .redux-image {
+    width: 20% !important;
+    margin-left: 10%;
+  }
+  .postgresql-image {
+    width: 20% !important;
+    margin-left: 10%;
+  }
+  .nodejs-image {
+    width: 20% !important;
+    margin-left: 10%;
+  }
+  .dynamodb-image {
+    width: 20% !important;
+    margin-right: 10%;
+  }
+  .apiGateway-image {
+    width: 20% !important;
+    margin-right: 10%;
+  }
+  .serverless-image {
+    width: 20% !important;
+    margin-left: 10%;
+  }
+  .lambda-image {
+    width: 20% !important;
+    margin-right: 10%;
+  }
+  .restapi-image {
+    width: 20% !important;
+    margin-left: 10%;
+  }
+  .redshift-image {
+    width: 20% !important;
+    margin-right: 10%;
+  }
+  /* DEVOPS END SKILLS */
+  .aws-image {
+    width: 20% !important;
+    margin-right: 10%;
+  }
+  .docker-image {
+    width: 20% !important;
+    margin-right: 10%;
+  }
+  .s3-image {
+    width: 20% !important;
+    margin-right: 10%;
+  }
+  .cloudwatch-image {
+    width: 20% !important;
+    margin-left: 10%;
+  }
+  .jira-image {
+    width: 20% !important;
+    margin-left: 10%;
+  }
+  .git-image {
+    width: 20% !important;
+    margin-left: 10%;
+  }
+  .ec2-image {
+    width: 20% !important;
+    
+  }
+
+ }
+
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .nav-pills .nav-item .nav-link {
+    min-width: 90px;
+    font-size: 10px;
+  }
+  /*  FRONT END SKILLS */
+  .css-image {
+    width: 75% !important;
+  }
+  .html-image {
+    width: 75% !important;
+  }
+  .react-image {
+    width: 130% !important;
+  }
+  .bootstrap-image {
+    width: 130% !important;
+  }
+  .sass-image {
+    width: 130% !important;
+  }
+  .js-image {
+    width: 130% !important;
+  }
+  /*  BACK END SKILLS */
+  .redux-image {
+    width: 130% !important;
+  }
+  .postgresql-image {
+    width: 130% !important;
+  }
+  .nodejs-image {
+    width: 130% !important;
+  }
+  .dynamodb-image {
+    width: 130% !important;
+  }
+  .apiGateway-image {
+    width: 130% !important;
+  }
+  .serverless-image {
+    width: 130% !important;
+  }
+  .lambda-image {
+    width: 130% !important;
+  }
+  .redshift-image {
+    width: 140% !important;
+  }
+  .restapi-image {
+    width: 130% !important;
+  }
+
+  /*  DEVOPS END SKILLS */
+  .aws-image {
+    width: 130% !important;
+  }
+  .docker-image {
+    width: 130% !important;
+  }
+  .s3-image {
+    width: 130% !important;
+  }
+  .cloudwatch-image {
+    width: 130% !important;
+  }
+  .jira-image {
+    width: 130% !important;
+  }
+  .git-image {
+    width: 130% !important;
+  }
+  .ec2-image {
+    width: 130% !important;
+  }
+
+}
