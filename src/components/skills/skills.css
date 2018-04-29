@@ -1,3 +1,14 @@
+
+
+.title {
+  font-size: 30px;
+}
+
+.profile-page .gallery {
+  margin-top: 1rem;
+  padding-bottom: 0;
+}
+
 @media (min-width: 992px) {
 
   /* FRONT END IMAGES */
@@ -43,6 +54,9 @@
 }
 
 @media (max-width: 768px) {
+  .title {
+    font-size: 20px;
+  }
   .nav-pills .nav-item .nav-link {
     min-width: 80px;
     font-size: 9px;
@@ -137,7 +151,7 @@
   }
   .ec2-image {
     width: 20% !important;
-    
+
   }
 
  }
@@ -218,5 +232,9 @@
   .ec2-image {
     width: 130% !important;
   }
+
+}
+
+.divider {
 
 }

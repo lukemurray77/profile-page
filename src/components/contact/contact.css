@@ -1,0 +1,42 @@
+.contact-container {
+  border-top: 80px solid white;
+  margin-bottom: 30px;
+}
+
+.form-error-message {
+  color: red;
+}
+
+.form-buttons {
+  margin-left: 12px;
+}
+
+.form-errors {
+  color: red;
+  display: inline-block;
+  float: right;
+  height: 0;
+}
+
+.sent-message-error {
+  color: red;
+}
+
+.recaptcha {
+  margin-right: 6px;
+}
+
+.send-button-disabled {
+  cursor: no-drop;
+}
+
+.recaptcha-button {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+@media (max-width: 445px) {
+  .recaptcha-button {
+    margin-left: 0 !important;
+  };
+}

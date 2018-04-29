@@ -1,0 +1,59 @@
+.triangle {
+  height: 0;
+  width: 0;
+  border-left: 7.9vw solid transparent;
+  border-right: 7.9vw solid transparent;
+  border-top: 20px solid #D3D0CB;
+  display: inline-block;
+}
+
+.triangle-white {
+  border-top: 20px solid white !important
+}
+
+.triangle-pink {
+  border-top: 20px solid #7F7F7F !important
+}
+
+.triangle-purple {
+  border-top: 20px solid #120e0e !important
+}
+
+.divider-container {
+  height: 0;
+}
+
+@media (max-width: 1151px) and (min-width: 992px) {
+  .triangle {
+    border-left: 7.8vw solid transparent;
+    border-right: 7.8vw solid transparent;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .triangle {
+    border-left: 7.65vw solid transparent;
+    border-right: 7.65vw solid transparent;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 440px) {
+  .triangle {
+    border-left: 7.2vw solid transparent;
+    border-right: 7.2vw solid transparent;
+  }
+}
+
+@media (max-width: 439px) {
+  .triangle {
+    border-left: 7.1vw solid transparent;
+    border-right: 7.1vw solid transparent;
+  }
+}
+
+@media (max-width: 400px) {
+  .triangle {
+    border-left: 7.0vw solid transparent;
+    border-right: 7.0vw solid transparent;
+  }
+}

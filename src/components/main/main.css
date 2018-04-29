@@ -3,3 +3,75 @@
   margin: 0 auto;
   text-align: center;
 }
+
+.button-container button {
+  width: 100%;
+}
+
+.button-navs {
+  margin: auto;
+  margin-top: 80px;
+}
+
+.contact-button {
+  background-color: transparent;
+  color: white;
+  font-weight: 500;
+  border: 0
+}
+.btn-primary {
+  background-color: #35445c !important;
+}
+
+.profile-pic-buttons {
+  background-color: #120e0e;
+  border-bottom: 50px solid #120e0e;
+  color: #abaaaa;
+}
+
+/* .button-navs .button-container button {
+  background-color: #344561;
+} */
+
+.skills-div {
+  background-color: white;
+  border-bottom: 50px solid white;
+}
+
+
+.divider {
+  margin: 0;
+}
+
+
+.projects-div {
+  background-color: #7F7F7F;
+  border-bottom: 50px solid #7F7F7F;
+}
+
+
+.route-to-skills {
+  margin-bottom: 80px;
+}
+
+
+@media (max-width: 768px) {
+  .main-raised {
+    margin: 0;
+    margin-top: -60px;
+  }
+  .button-navs {
+    width: 40%;
+  }
+}
+
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .button-navs {
+    width: 60%;
+  }
+}
+
+.contact-me {
+  padding-bottom: 20px;
+}
