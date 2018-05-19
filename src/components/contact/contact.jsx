@@ -12,7 +12,6 @@ class Contact extends Component {
       name: '',
       email: '',
       text: '',
-      loaded: false,
       verifyCaptcha: null,
       sent: false,
     };
@@ -23,16 +22,15 @@ class Contact extends Component {
     this.onTextChange = this.onTextChange.bind(this);
     this.onSend = this.onSend.bind(this);
     this.verifyCallback = this.verifyCallback.bind(this);
+    this.callback = this.callback.bind(this);
     this.recaptchaInstance = null;
   }
-  onInputChange(value, key) {
-    this.setState({
-      [key]: value,
-      [`${key}Error`]: null,
-      sent: false,
-      sentError: '',
-    });
-  }
+
+  // componentDidMount() {
+  //   if(this.state.loaded) {
+  //
+  //   }
+  // }
 
   onSend(e) {
     e.preventDefault();
@@ -85,12 +83,6 @@ class Contact extends Component {
     return this.onInputChange(e.target.value, 'email');
   }
 
-  onloadCallback() {
-    this.setState({
-      loaded: true,
-    });
-  }
-
   onTextChange(e) {
     return this.onInputChange(e.target.value, 'text');
   }
@@ -104,6 +96,11 @@ class Contact extends Component {
     this.setState({
       ...formErrors,
     });
+  }
+
+  callback() {
+    console.log('DONE');
+    console.log(this.state);
   }
 
   expiredCallback() {
@@ -125,7 +122,7 @@ class Contact extends Component {
   }
 
   render() {
-    console.log(process.env);
+    // console.log(process.env);
     const sentMessage = this.state.sent
       ? (
         <div className="sent-message">
@@ -159,6 +156,7 @@ class Contact extends Component {
 
     const disabledButton = !this.state.verifyCaptcha;
     const disabledClassname = !this.state.verifyCaptcha ? '-disabled' : '';
+
     return (
       <div className="contact-container">
         <form>
@@ -208,7 +206,7 @@ class Contact extends Component {
                 render="explicit"
                 size="compact"
                 verifyCallback={this.verifyCallback}
-                onloadCallback={this.onloadCallback}
+                onloadCallback={this.callback}
                 expiredCallback={this.expiredCallback}
               />
             </div>
