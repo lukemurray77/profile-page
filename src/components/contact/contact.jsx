@@ -12,6 +12,7 @@ class Contact extends Component {
       name: '',
       email: '',
       text: '',
+      loaded: false,
       verifyCaptcha: null,
       sent: false,
     };
@@ -43,7 +44,7 @@ class Contact extends Component {
 
       const options = {
         method: 'POST',
-        uri: process.env.API_URL,
+        uri: process.env.REACT_APP_API_URL,
         body: this.state,
         json: true, // Automatically stringifies the body to JSON
         headers: {
@@ -85,7 +86,9 @@ class Contact extends Component {
   }
 
   onloadCallback() {
-    console.log('LOADED');
+    this.setState({
+      loaded: true,
+    });
   }
 
   onTextChange(e) {
@@ -122,6 +125,7 @@ class Contact extends Component {
   }
 
   render() {
+    console.log(process.env);
     const sentMessage = this.state.sent
       ? (
         <div className="sent-message">
@@ -199,12 +203,12 @@ class Contact extends Component {
             </div>
             <div className="recaptcha-button ml-auto">
               <Recaptcha
-                sitekey={process.env.SITE_KEY}
+                sitekey={process.env.REACT_APP_SITE_KEY}
                 ref={(e) => { this.recaptchaInstance = e; }}
                 render="explicit"
                 size="compact"
                 verifyCallback={this.verifyCallback}
-                onloadCallback={this.callback}
+                onloadCallback={this.onloadCallback}
                 expiredCallback={this.expiredCallback}
               />
             </div>
