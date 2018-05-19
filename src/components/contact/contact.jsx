@@ -26,11 +26,14 @@ class Contact extends Component {
     this.recaptchaInstance = null;
   }
 
-  // componentDidMount() {
-  //   if(this.state.loaded) {
-  //
-  //   }
-  // }
+  onInputChange(value, key) {
+    this.setState({
+      [key]: value,
+      [`${key}Error`]: null,
+      sent: false,
+      sentError: '',
+    });
+  }
 
   onSend(e) {
     e.preventDefault();
