@@ -22,6 +22,8 @@ class Contact extends Component {
     this.onTextChange = this.onTextChange.bind(this);
     this.onSend = this.onSend.bind(this);
     this.verifyCallback = this.verifyCallback.bind(this);
+    this.expiredCallback = this.expiredCallback.bind(this);
+    this.resetRecaptcha = this.resetRecaptcha.bind(this);
     this.callback = this.callback.bind(this);
     this.recaptchaInstance = null;
   }
@@ -102,11 +104,16 @@ class Contact extends Component {
   }
 
   callback() {
-    console.log('DONE');
-    console.log(this.state);
+    this.setState({
+
+    });
   }
 
   expiredCallback() {
+    this.setState({
+      verifyCaptcha: null,
+    });
+
     this.resetRecaptcha();
   }
 
@@ -125,7 +132,6 @@ class Contact extends Component {
   }
 
   render() {
-    // console.log(process.env);
     const sentMessage = this.state.sent
       ? (
         <div className="sent-message">
@@ -211,6 +217,7 @@ class Contact extends Component {
                 verifyCallback={this.verifyCallback}
                 onloadCallback={this.callback}
                 expiredCallback={this.expiredCallback}
+                class="form-control"
               />
             </div>
           </div>

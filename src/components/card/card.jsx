@@ -9,7 +9,7 @@ const Card = props =>
       <div className="card-body">
         <h4 className="card-title">{props.title}</h4>
         <p className="card-text">{props.description}</p>
-        <a href="/foo" className="card-button btn btn-primary">Check it out!</a>
+        <a href={props.url} className="card-button btn btn-primary" target="_blank" rel="noopener noreferrer">Check it out!</a>
       </div>
     </div>
   );

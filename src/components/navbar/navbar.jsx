@@ -19,11 +19,14 @@ const Navbar = () =>
                 <i className="material-icons">apps</i> Projects
               </a>
               <div className="dropdown-menu dropdown-with-icons">
-                <a href="https://northcoders-news-12345.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="dropdown-item">
+                <a href="https://twitter.com/alexaSpitsBars" target="_blank" rel="noopener noreferrer" className="dropdown-item">
                   <i className="material-icons">mic</i> Alexa rap battle
                 </a>
-                <a href="https://northcoders-news-12345.herokuapp.com/" className="dropdown-item">
+                <a href="https://northcoders-news-12345.herokuapp.com/" className="dropdown-item" target="_blank" rel="noopener noreferrer">
                   <i className="material-icons">web</i> Northcoders News
+                </a>
+                <a href="https://lukemurray77.github.io/LowBar/" target="_blank" rel="noopener noreferrer" className="dropdown-item">
+                  <i className="material-icons">code</i> Lowbar
                 </a>
               </div>
             </li>
