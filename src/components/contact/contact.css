@@ -35,6 +35,10 @@
   margin-top: 10px;
 }
 
+.loading-div {
+  height: 450px;
+}
+
 @media (max-width: 445px) {
   .recaptcha-button {
     margin-left: 0 !important;

@@ -24,9 +24,9 @@
 }
 
 .profile-pic-buttons {
-  background-color: #120e0e;
-  border-bottom: 50px solid #120e0e;
-  color: #abaaaa;
+  background-color: white;
+  color: #2f435b;
+  border-radius: 6px;
 }
 
 /* .button-navs .button-container button {
@@ -35,7 +35,6 @@
 
 .skills-div {
   background-color: white;
-  border-bottom: 50px solid white;
 }
 
 
@@ -45,13 +44,7 @@
 
 
 .projects-div {
-  background-color: #7F7F7F;
-  border-bottom: 50px solid #7F7F7F;
-}
-
-
-.route-to-skills {
-  margin-bottom: 80px;
+  background-color: #F8F8F8;
 }
 
 

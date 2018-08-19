@@ -1,4 +1,36 @@
 .profile-title {
-  color: #abaaaa;
+  color: #2f435b;
   font-weight: 500;
+}
+
+
+.social-stuff {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+
+.social-button {
+  color: black;
+  font-size: 20px;
+}
+
+.fa-facebook-square {
+  color: #3B5998;
+}
+
+.fa-facebook-square:hover {
+  color: #6E8CCB;
+}
+
+.fa-linkedin {
+  color: #0077B5;
+}
+
+.fa-linkedin:hover {
+  color: #6E8CCB;
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import './card.css';
-import cardEgImage from '../images/aws.png';
 
-const Card = props =>
-  (
+const Card = (props) => {
+  const className = props.customImg ? `card-img-top ${props.customImg}` : 'card-img-top';
+  return (
     <div className="card">
-      <img className="card-img-top" src={props.image || cardEgImage} alt="Sorry, failed to load" />
+      <img className={className} src={props.image} alt="Sorry, failed to load" />
       <div className="card-body">
         <h4 className="card-title">{props.title}</h4>
         <p className="card-text">{props.description}</p>
@@ -13,5 +13,6 @@ const Card = props =>
       </div>
     </div>
   );
+};
 
 export default Card;

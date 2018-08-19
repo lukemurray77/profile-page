@@ -14,6 +14,7 @@ class Contact extends Component {
       text: '',
       verifyCaptcha: null,
       sent: false,
+      isLoading: false,
     };
 
     this.onInputChange = this.onInputChange.bind(this);
@@ -43,6 +44,7 @@ class Contact extends Component {
       this.setState({
         sent: false,
         sentError: '',
+        isLoading: true,
       });
 
       const options = {
@@ -57,22 +59,26 @@ class Contact extends Component {
 
       request(options)
         .then(() => {
-          this.resetRecaptcha();
           this.setState({
             email: '',
             text: '',
             name: '',
             sent: true,
+            isLoading: false,
             verifyCaptcha: null,
+          }, () => {
+            this.resetRecaptcha();
           });
         })
         .catch((err) => {
           if (err) {
-            this.resetRecaptcha();
             this.setState({
               sent: false,
+              isLoading: false,
               sentError: err.error.message,
               verifyCaptcha: null,
+            }, () => {
+              this.resetRecaptcha();
             });
           }
         });
@@ -166,6 +172,8 @@ class Contact extends Component {
     const disabledButton = !this.state.verifyCaptcha;
     const disabledClassname = !this.state.verifyCaptcha ? '-disabled' : '';
 
+    const button = this.state.isLoading ? <div>Sending...</div> : <button type="submit" className={`btn btn-primary send-button${disabledClassname}`} disabled={disabledButton} onClick={this.onSend}>Send</button>;
+
     return (
       <div className="contact-container">
         <form>
@@ -204,7 +212,7 @@ class Contact extends Component {
               {textError}
             </div>
             <div className="form-buttons">
-              <button type="submit" className={`btn btn-primary send-button${disabledClassname}`} disabled={disabledButton} onClick={this.onSend}>Send</button>
+              {button}
               {sentMessage}
               {sentError}
             </div>

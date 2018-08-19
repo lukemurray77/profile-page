@@ -5,3 +5,15 @@
 .card-button {
   max-width: 100%;
 }
+
+.card-img-top {
+  margin: auto;
+  margin-top: 20px;
+  width: 92%;
+}
+
+.peakimg {
+  width: 250px;
+  margin: auto;
+  margin-top: 20px;
+}

@@ -1,7 +1,7 @@
 .projects-title {
   margin: 0;
   border: 0;
-  color: white;
+  color: #2f435b;
   font-size: 30px;
   font-weight: 500;
 }
@@ -12,7 +12,7 @@
 }
 
 .project-container {
-  border-top: 80px solid #7F7F7F;
+  border-top: 80px solid #F8F8F8;
 }
 
 .projects-list {
